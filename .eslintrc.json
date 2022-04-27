@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb", "eslint-config-prettier"],
+  "plugins": ["eslint-plugin-prettier"],
+  "ignorePatterns": [
+    "node_modules",
+    "build"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "new-cap": "off",
+    "no-useless-constructor": "off",
+    "no-return-await": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-array-index-key": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  },
+  "overrides": [{
+    "files": ["*.test.ts", "*.test.js"],
+    "rules": {
+      "@typescript-eslint/naming-convention": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "func-names": "off"
+    }
+  }]
+}
