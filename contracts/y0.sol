@@ -21,7 +21,7 @@ contract y0 {
     return users[acc];
   }
 
-  function revokeRole(address acc) public {
+  function revokeRole(address acc) public payable {
     uint user = users[msg.sender];
 
     require(
@@ -42,7 +42,7 @@ contract y0 {
     delete users[acc];
   }
 
-  function grantRole(address acc, uint role) public {
+  function grantRole(address acc, uint role) public payable {
     uint user = users[msg.sender];
 
     require(

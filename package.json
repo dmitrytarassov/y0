@@ -17,6 +17,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "ethereumjs-tx": "^2.1.2",
     "mocha": "^9.2.2",
     "prettier": "^2.6.2",
     "tsconfig-paths": "^3.14.1",
@@ -31,6 +32,9 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "example": "ts-node example/index.ts"
+    "example": "ts-node example/index.ts",
+    "get_role": "ts-node example/getRole.ts",
+    "add_role": "ts-node example/addRole.ts",
+    "revoke_role": "ts-node example/revokeRole.ts"
   }
 }

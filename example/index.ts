@@ -7,6 +7,7 @@ const web3 = new Web3(
   `http://${config.networks.development.host}:${config.networks.development.port}`
 );
 
+
 const contract = new web3.eth.Contract(
   y0Contract.abi,
   y0Contract.networks[config.networks.development.network_id].address
@@ -80,7 +81,9 @@ function separator(name: string) {
 
 async function main() {
   const accounts = await web3.eth.getAccounts();
+  console.log('main');
   const [owner, user1, user2] = accounts;
+  console.log(accounts);
 
   await printRole("owner", owner);
   await printRole("user1", user1);

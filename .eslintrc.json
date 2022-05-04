@@ -20,7 +20,8 @@
     "no-return-await": "off",
     "react-hooks/exhaustive-deps": "off",
     "react/no-array-index-key": "off",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "no-console": "off"
   },
   "overrides": [{
     "files": ["*.test.ts", "*.test.js"],
